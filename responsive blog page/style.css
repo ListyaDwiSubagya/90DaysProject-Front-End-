@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.navbar {
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgb(13, 13, 13);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #fff;
+}
+
+.blog-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.blog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.3rem;
+  justify-content: center;
+  padding: 0.3rem;
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.blog-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 10px 8px 30px rgb(0 0 0 / 30%);
+}
+
+.blog-image {
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.blog-image:hover img {
+  transition: all 0.3s;
+  transform: scale(1.1);
+  border-radius: 0.3rem;
+}
+
+.blog-image img {
+  width: 100%;
+  background-size: contain;
+  border-radius: 0.3rem;
+}
+
+.about-author img {
+  width: 20%;
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.description {
+  font-size: 0.75rem;
+}
+
+.blog-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-author {
+  display: flex;
+  align-items: center;
+  font-size: 0.6rem;
+  position: relative;
+  bottom: 0;
+  left: -0.8rem;
+}
+
+.about-author p {
+  margin-left: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.about-author span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 551px) {
+  .blog-container {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Login Form with Password ShowHide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <h3> Login at Tyohelp.in </h3>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" placeholder="Enter Your Name">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter email">
+
+            <label for="password">Password</label>
+            <div class="pass">
+                <input type="password" name="password" id="password" class="pass" placeholder="Enter password">
+                <i id="show-hide" class="fa-solid fa-eye-slash"></i>
+            </div>
+            <button type="submit">Log In</button>
+            <hr>
+            <div class="social-container">
+                <h2> have an account? <a href="index.html">Log In</a> </h2>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

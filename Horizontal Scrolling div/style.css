@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-container {
+  width: 500px;
+  padding: 10px;
+  display: grid;
+  flex-flow: row;
+  overflow-x: auto;
+  border-radius: 50rem;
+  grid-auto-flow: column;
+  border: 1px solid rgb(170, 170, 170);
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: "";
+  background: transparent;
+}
+
+.scrol-item {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #e60be6;
+}
+
+.scrol-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+}
+
+.scrol-item img:hover {
+  transform: scale(1.1);
+}
